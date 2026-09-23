@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Quiz Interactif</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!--
+    Principe de l'application : Quiz interactif à choix multiples.
+    L'utilisateur répond à une série de questions en cliquant sur une réponse.
+    Après chaque réponse, l'application indique si c'est correct ou non,
+    puis affiche la question suivante. À la fin, le score total est affiché,
+    avec un bouton pour recommencer le quiz.
+  -->
+
+  <main class="quiz-container">
+    <h1>Quiz Interactif</h1>
+
+    <!-- Écran du quiz (questions) -->
+    <section id="quiz-screen">
+      <p id="question-counter"></p>
+      <h2 id="question-text"></h2>
+      <div id="answers-container"></div>
+      <p id="feedback"></p>
+      <button id="next-btn" class="hidden">Question suivante</button>
+    </section>
+
+    <!-- Écran de fin (score) -->
+    <section id="result-screen" class="hidden">
+      <h2>Quiz terminé !</h2>
+      <p id="score-text"></p>
+      <button id="restart-btn">Recommencer</button>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
